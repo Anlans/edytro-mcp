@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "edytro",
+  "version": "1.0.0",
+  "description": "AI image editor: edit, enhance, upscale, and remove backgrounds from photos with the latest image models.",
+  "author": {
+    "name": "Edytro",
+    "url": "https://edytro.com"
+  },
+  "homepage": "https://edytro.com",
+  "license": "MIT",
+  "keywords": [
+    "image editing",
+    "background removal",
+    "upscale",
+    "ai image",
+    "photo editor"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Edytro",
+        "shortDescription": "AI image editor: edit, enhance, upscale, remove backgrounds",
+        "longDescription": "Edytro edits images with the latest AI models. Remove or replace backgrounds, upscale to higher resolution, change objects or clothing with a sentence, or generate new images from text. Costs credits per operation; failed tasks are refunded automatically.",
+        "developerName": "Edytro",
+        "category": "Design",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://edytro.com",
+        "privacyPolicyURL": "https://edytro.com/privacy-policy",
+        "termsOfServiceURL": "https://edytro.com/terms-of-service",
+        "defaultPrompt": [
+          "Remove the background from my product photo.",
+          "Upscale this image to higher resolution."
+        ]
+      }
+    }
+  }
+}
